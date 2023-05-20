@@ -1,4 +1,4 @@
-# tools
+# Tools
 
 ### Inveigh.ps1
 https://github.com/Kevin-Robertson/Inveigh/blob/master/Inveigh.ps1  
@@ -14,7 +14,6 @@ Replacements for various Windows net*
 PS C:\> import-module .\PowerView.ps1  
 PS C:\> Get-DomainPolicy  
 PS C:\> Get-DomainUser * -spn | select samaccountname  #to extract TGS tickets  
-PS C:\> Get-DomainUser * -SPN | Get-DomainSPNTicket -Format Hashcat | Export-Csv .\all_tickets.csv -NoTypeInformation  #export to csv  
 
 
 ### nc.exe
