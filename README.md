@@ -2,8 +2,8 @@
 
 ### Inveigh.ps1
 https://github.com/Kevin-Robertson/Inveigh/blob/master/Inveigh.ps1
-Similar to Responder, for powershell
-PS C:\> Import-Module .\Inveigh.ps1
+Similar to Responder, for powershell /
+PS C:\> Import-Module .\Inveigh.ps1 /
 PS C:\> (Get-Command Invoke-Inveigh).Parameters
 PS C:\> Invoke-Inveigh Y -NBNS Y -ConsoleOutput Y -FileOutput Y
 
